@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hub</title>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.section-home, .section-games, .section-about, .section-contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.section-home {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.section-home .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.section-games .games-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.game-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.play-btn {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Game Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section-home">
+        <h2>Welcome to Game Hub</h2>
+        <p>Your destination for fun and exciting games!</p>
+        <a href="#games" class="btn">Explore Games</a>
+    </section>
+
+    <section id="games" class="section-games">
+        <h2>Featured Games</h2>
+        <div class="games-container">
+            <div class="game-card">
+                <h3>Game 1</h3>
+                <img src="https://i.ytimg.com/vi/-i0OIy5zSrs/maxresdefault.jpg" alt="Game 1">
+                <p>A fun adventure game where you explore new worlds.</p>
+                <a href="#" class="play-btn">Play Now</a>
+            </div>
+            <div class="game-card">
+                <h3>Game 2</h3>
+                <img src="https://media.wired.co.uk/photos/606dae60f19707fe1aef38f4/16:9/w_1280,c_limit/CivilizationVI_screenshot_announce1.jpg" alt="Game 2">
+                <p>A strategy game to challenge your mind.</p>
+                <a href="#" class="play-btn">Play Now</a>
+            </div>
+            <!-- Add more games here -->
+        </div>
+    </section>
+
+    <section id="about" class="section-about">
+        <h2>About Us</h2>
+        <p>Game Hub is a platform designed to bring fun, interactive, and educational games to players of all ages.</p>
+    </section>
+
+    <section id="contact" class="section-contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Game Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
