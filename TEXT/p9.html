@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-overflow</title>
+    <style>
+        *{
+            text-transform: capitalize;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div{
+            padding: 20px;
+            margin: 20px;
+            width: 200px;
+            height: 200px;
+           background-color: #ccc;
+          
+        }
+        .b1{
+          /*overflow:hidden*/
+         /* overflow: scroll;*/
+         overflow: auto;
+        }
+        .b2 p{
+            white-space: nowrap;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+        <h1>handling text-overflow using css properties</h1>
+    </center>
+
+    <h1>Clip</h1>
+    <div class="b1">
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In et neque nam fugiat, dicta dolorem nulla? Consequuntur quibusdam vero laboriosam error delectus officiis distinctio asperiores neque temporibus tempora aperiam praesentium sunt, sint enim consequatur, ad animi quis ratione et facere fugiat porro ea! Omnis, delectus voluptas a id magnam iusto.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iusto velit quis nihil exercitationem odit autem architecto cumque quisquam voluptate nobis debitis porro maiores dicta, tempora facilis nisi recusandae obcaecati?</p>
+     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis tenetur voluptatibus voluptas, laudantium, debitis, soluta hic blanditiis numquam earum exercitationem consectetur incidunt dignissimos corrupti architecto reprehenderit mollitia dolores fugiat a.</p>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, odio vel id enim molestias doloribus? Quae consequuntur tempore est, corrupti deserunt adipisci ipsa officia veniam vitae sed laudantium maxime incidunt?</p>
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed incidunt minima nemo quas animi provident nobis deserunt ab aliquid. Possimus numquam pariatur doloribus facilis expedita iusto maxime quo! Ullam beatae accusamus ipsum! Impedit dicta voluptas eius error nihil nesciunt dolores.</p>
+    </div>
+
+
+    <h1>text ellipsis(...)</h1>
+    <div class="b2">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In et neque nam fugiat, dicta dolorem nulla? Consequuntur quibusdam vero laboriosam error delectus officiis distinctio asperiores neque temporibus tempora aperiam praesentium sunt, sint enim consequatur, ad animi quis ratione et facere fugiat porro ea! Omnis, delectus voluptas a id magnam iusto.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iusto velit quis nihil exercitationem odit autem architecto cumque quisquam voluptate nobis debitis porro maiores dicta, tempora facilis nisi recusandae obcaecati?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis tenetur voluptatibus voluptas, laudantium, debitis, soluta hic blanditiis numquam earum exercitationem consectetur incidunt dignissimos corrupti architecto reprehenderit mollitia dolores fugiat a.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, odio vel id enim molestias doloribus? Quae consequuntur tempore est, corrupti deserunt adipisci ipsa officia veniam vitae sed laudantium maxime incidunt?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed incidunt minima nemo quas animi provident nobis deserunt ab aliquid. Possimus numquam pariatur doloribus facilis expedita iusto maxime quo! Ullam beatae accusamus ipsum! Impedit dicta voluptas eius error nihil nesciunt dolores.</p>
+    </div>
+</body>
+</html>
