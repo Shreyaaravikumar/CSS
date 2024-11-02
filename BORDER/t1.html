@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-image</title>
+    <style>
+        section{
+            margin: 0;
+            display: flex;
+            padding: 70px;
+            align-items: center;
+            justify-content: center;
+        }
+        .about-area{
+            padding-top: 5%;
+            flex: 1;
+        }
+        body{
+            background: #131f33;
+        }
+        .about-img{
+            position: relative;
+        }
+        .about-img::before{
+            position: absolute;
+            content: '';
+            left: 310px;
+            top: 100px;
+            border: 10px solid rgba(255,255,255,0.5);
+            width: 40%;
+            height: 80%;
+        }
+        .about-img img{
+            width: 300px;
+            height: 400px;
+            padding-top: 10%;
+            padding-left: 40%;
+        }
+        .text{
+            flex: 1;
+            padding-top: 10%;
+        }
+        .text h2{
+            color: #fff;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 40px;
+
+        }
+        .text p{
+            font-size: 18px;
+            color: #ddd;
+            margin-top: 1px;
+            margin-right: 10px;
+            line-height: 25px;
+        }
+        .text a{
+            background: orangered;
+            color: #fff;
+            padding: 7px 15px;
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            border-radius: 10px;
+
+        }
+        .text a:hover{
+            background-color: #ec491c77;
+            cursor: pointer;
+        }
+       
+    </style>
+</head>
+<body>
+   <section>
+    <div class="about-area">
+        <div class="about-img">
+            <img src="https://a.mktgcdn.com/p/cTXJce7ATL-wuivx6MZtHvoIQTj9A1IqH4BdBNrOlIQ/1000x1000.jpg" alt="loading">
+        </div>
+    </div>
+    <div class="text">
+        <h2>John Doe</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet architecto voluptatum nam molestias accusantium, possimus tempora a tenetur ratione. Omnis sit, laudantium, eveniet, neque eaque sapiente quibusdam rerum doloribus voluptas at vitae obcaecati voluptate harum iusto. Doloremque eius magnam, quo delectus blanditiis, recusandae velit maiores magni fugit ea iusto impedit.</p>
+        <a href="#">Learn More</a>
+    </div>
+</div>
+</div>
+</div>
+   </section>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border</title>
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        section{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background:linear-gradient(90deg, #a5a5a5, #000);
+        }
+        .container{
+            position: relative;
+            width: 26%;
+            height: 60%;
+            padding: 15px 20px;
+            background-color: #fff;
+            border-image: url(https://static.vecteezy.com/system/resources/thumbnails/021/930/656/small_2x/red-luxury-background-with-gold-mandala-ornament-vector.jpg) 10;
+        }
+        .divider{
+            margin: 10px 0;
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+        }
+        article{
+            font-size: 18px;
+            font-weight: 400;
+            color: #000;
+        }
+
+        .profile{
+            width: 80px;
+            height: 80px;
+            background-color: rgb(47, 74, 98);
+            border-width: 5px;
+            border-color: gray;
+            border-style: solid;
+            border-image: linear-gradient(#0aad8c, #0030c1 #000fd4)  10;
+            border-radius: 100px;
+        }
+
+        .mask{
+            background: linear-gradient(5deg, #0a28ad, #0cd38a, #000fd4);
+            width: fit-content;
+            height: fit-content;
+            margin-bottom: 30px;
+            border-radius: 100px;
+            padding: 10px;
+        }
+        .profile2{
+            align-items: center;
+            justify-items: center;
+            width: 80px;
+            height: 80px;
+         border-radius: 100px;
+            background-color: rgb(255, 255, 255);
+        }
+        .profile2 img{
+          border-radius: 50%;
+        }
+        .profile2 p{
+            font-size: 1rem;
+            font-weight: 500;
+           margin-top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">      
+                <div class="mask">
+                    <div class="profile2">
+                        <img src="./rose.jpg" alt="" width="80" height="80">
+                        <p>John Doe</p>
+                    </div>
+                </div>
+           
+            <div class="divider">
+                <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas distinctio voluptatum quia, sit cumque molestias, dolores cupiditate temporibus esse inventore enim itaque debitis qui necessitatibus animi consequatur quaerat ipsam natus illo reiciendis non aperiam error optio! Numquam obcaecati eius quam excepturi eos reprehenderit molestias corporis! Maxime tenetur ab numquam eligendi!</article>
+            </div>
+        </div>
+       </section>
+</body>
+</html>

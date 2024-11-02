@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Border Image</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            height: 100vh;
+          
+            align-items: center;
+            justify-content: center;
+            background:#ccc
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .repeating-linear {
+  color: pink;
+  border: 10px solid pink;
+  border-image: repeating-linear-gradient( 45deg, pink, pink 1%, purple 1%, purple 8%) 10;
+}
+.repeating-linear h1,p{
+    margin-left: 10px;
+}
+
+.repeating-linear:hover {
+  border-image: repeating-linear-gradient( 45deg, purple, purple 1%, pink 1%, pink 8%) 10;
+  color: purple;
+}
+/* styling for Pen, unrelated to border-image */
+
+
+
+div {
+  margin: 4em auto;
+  width: 40vw;
+  height: 40vh;
+}
+.hearts {
+  border: 20px solid pink;
+  border-image-source: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/hearts-border-image.png);
+  border-image-slice: 20 22;
+  border-image-repeat: round;
+}
+/* styling for Pen, unrelated to border-image */
+.hearts p{
+    color: #fff;
+}
+
+div {
+  width: 40vw;
+  height: 40vh;
+  margin: 4em auto;
+}
+
+
+.inline-svg {
+  /* Doesn't work at all in IE */
+  
+  border: 10px solid white;
+  border-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50'><defs><linearGradient id='redgradient'><stop offset='0' stop-color='%23FFC14D'/><stop offset='0.362' stop-color='%23FF4834'/><stop offset='1' stop-color='%233B0300'/></linearGradient></defs><g id='Layer_1'><path d='M0,0 L50,0 L50,50 L0,50 L0,0 z' fill='url(%23redgradient)' width='100%' height='100%'/></g></svg>") 10% stretch;
+}
+.inline-svg h1{
+    color: #fff;
+    margin-left: 20px;
+}
+.inline-svg p{
+    color: #fff;
+    margin-left: 20px;
+}
+
+/* styling for Pen, unrelated to border-image */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1D1F1F;
+}
+
+div {
+  width: 40vw;
+  height: 40vh;
+  margin: 4em auto;
+}
+    </style>
+</head>
+<body>
+
+  
+       <section>
+        <div class="repeating-linear"> <br>
+            <h1>ADITHYA RAO</h1> <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusantium quis aperiam nesciunt! Deleniti consequuntur porro distinctio, magni asperiores ipsam, labore beatae voluptatum autem modi earum nihil laudantium veniam qui a, quod molestias accusantium quos unde molestiae minima explicabo totam recusandae? Ipsum ad iste deserunt saepe nam quo eveniet dicta?</p><br> <br>
+           <center> <p>Thank You</p></center>
+        </div>
+
+        <div class="hearts"> <br>
+            <h1 style="color: #fff;">Shrushtii</h1> <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tenetur porro exercitationem odio ut earum optio nobis eos. Maiores mollitia quasi ex iste molestiae quas obcaecati nam architecto ab earum? Perspiciatis sunt modi molestiae saepe aspernatur deleniti explicabo eveniet consequatur, corporis incidunt enim maiores magnam, tempora accusamus, voluptas aperiam asperiores?</p>
+        </div> 
+
+
+        <div class="inline-svg"> <br>
+            <h1>Shiv</h1> <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit corporis dolore labore debitis rem optio delectus distinctio nulla repudiandae ipsa beatae doloribus expedita, corrupti hic, sapiente, qui tempore ullam deserunt quidem ratione voluptas praesentium aliquam dolorum adipisci? Expedita nulla, ullam labore, quidem fuga deserunt suscipit cumque illo, sint voluptatem delectus!</p>
+        </div>
+       </section>
+    
+
+</body>
+</html>
