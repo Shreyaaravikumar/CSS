@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+      [src]{
+        background-color: #0c0c0c;
+        padding: 30px;
+        border-radius: 20px;
+        display: block;
+        margin: auto;
+      }
+      [alt]{
+        border: 3px solid #5b3ce7;
+      }
+      [title]{
+        background-color: #5b3ce7;
+        padding: 30px;
+      }
+      h2[title]{
+        background-color: aqua;
+        padding: 30px;
+      }
+      [href]{
+        font-size: 2rem;
+        color: blue;
+        text-decoration: none;
+        font-weight: 900;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: block;
+        margin-bottom: 30px;
+      }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>CSS Selectors</h1>
+         <p>We have some CSS selectors to style the html elements.</p>
+     </center>
+     <ul>
+        <li>Universal selectors (*)</li>
+        <li>Element selectors (tag name)</li>
+        <li>class name selectors (class name using)</li>
+        <li>Id selectors (using id attribute #)</li>
+        <li>attribute selectors (using any attributes inside the elements)</li>
+        <li>attribute with value selector (attribute with the value)</li>
+     </ul>
+    
+     <h1>attribute selectors (using any attributes inside the elements)</h1>
+     <img src="https://th.bing.com/th/id/OIP.2mxZ-Zj9mHhdBGsSdR71PgHaHa?w=172&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="loading">
+
+     <h1 title="this is the heading tag with title attribute">This is the heading</h1>
+
+     <h2 title="this is the heading tag with title attribute">This is the heading</h2>
+
+     <a href="https://www.google.com" download="" target="_blank">this is the hyper link</a>
+     <a href="https://www.facebook.com" download="" target="_blank">this is the hyper link</a>
+     <a href="https://www.instagram.com" download="" target="_blank">this is the hyper link</a>
+     <a href="https://www.twitter.com" download="" target="_blank">this is the hyper link</a>
+
+
+     </section>
+    
+</body>
+</html>
