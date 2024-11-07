@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .icons{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+        .mic{
+            width: 50px;
+            height: 80px;
+            background-color: #0c0c0c;
+            border-radius: 100px;
+            position: relative;
+            padding: 10px;
+            border: 6px solid #022c04;
+            border-top: none;
+            border-bottom: 10px solid #022c04;
+        }
+        .mic::before{
+            content: '';
+            position: absolute;
+            width: 98%;
+            height: 98%;
+            background-color: #8a6100;
+            border-radius: 100px;
+            border:3px solid #fff;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        .mic::after{
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 30px;
+            background-color: #022c04;
+            bottom: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 0px 0px 10px 10px;
+        }
+        .mic2{
+            transform: rotate(45deg) translateX(-10px) translateY(40px);
+        }
+
+        .mic3{
+            transform: rotate(-55deg) translateX(-200px) translateY(-180px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Creating icons using css and before and after</h1>
+    <div class="icons">
+        <div class="mic"></div>
+        <div class="mic mic2"></div>
+        <div class="mic mic3"></div>
+    </div>
+</body>
+</html>
