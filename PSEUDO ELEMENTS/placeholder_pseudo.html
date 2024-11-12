@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 10px;
+            min-height: 100vh;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        form{
+            width: 300px;
+            padding: 20px;
+            background-color: #0c0c0c;
+            color: #fff;
+            border-radius: 10px;
+            margin-top: 20px;
+
+        }
+        input{
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: transparent;
+            color: aquamarine;
+            margin-top: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button{
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-top: 10px;
+            background-color: #fff;
+        }
+        input::placeholder{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>::placeholder</h1>
+    </center>
+    <form action="">
+        <label for="name">username</label>
+        <input type="text" placeholder="Enter your name" id="name" name="name">
+        <button>create account</button>
+    </form>
+</body>
+</html>

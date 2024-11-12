@@ -1,29 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
+        .container,
+        .container2 {
+            padding: 30px;
+            margin: 30px;
+            background-color: lightblue;
+        }
+
+        .container p,
+        .container2 p {
+            font-size: 1.3rem;
+            line-height: 2;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container p::first-letter {
+            font-size: 4rem;
+            font-weight: 900;
+            color: darkred;
+        }
+
+        .container2 p::first-line {
+            font-size: 3rem;
+            text-decoration: underline;
+            text-underline-offset: 15px;
+            text-decoration-color: red;
+            text-decoration-style: double;
+            color: green;
+        }
+
+        .container2 p::first-letter {
+            color: red;
+        }
     </style>
 </head>
+
 <body>
     <center>
-        <h1>css pseudo-elements...!</h1>
-        <p>the css pseudo-elements allow you to style the elements or parts of the elements without adding any IDs or classes to them.</p>
-        <p>css introduced a new double-colon(::) syntax for pseudo-elements to distinguish between them and pseudo-classes.</p>
-        <p>selector::pseudo-element {property:value;}</p>
+        <h1>CSS Pseudo-Elememts</h1>
+        <p>The Css Pseudo-Elememts allow you to style the elements or parts of the elements without adding any IDs or
+            classes to them.</p>
+        <p>CSS3 introduced a new double-colon (::) syntax for Pseudo-Elememts to distinguish between them and
+            Pseudo-Classes.</p>
+        <p><b>Selector::Pseudo-Elememt { property: value; } </b></p>
     </center>
     <hr>
-
-    <h1>::first-line and ::first-letter</h1>
+    <h1>::first-line and ::dirst-letter</h1>
     <div class="container">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias laboriosam eaque earum corrupti officia vel accusantium facilis. Illum repellendus alias architecto fugit, tenetur maiores atque reprehenderit natus? Totam, repudiandae culpa!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, eius eaque rem, eligendi laborum magni
+            quod molestiae assumenda voluptatem dignissimos sunt aperiam saepe vitae corporis, reprehenderit aut
+            consectetur omnis ducimus.</p>
     </div>
 
     <div class="container2">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias laboriosam eaque earum corrupti officia vel accusantium facilis. Illum repellendus alias architecto fugit, tenetur maiores atque reprehenderit natus? Totam, repudiandae culpa!</p>
-    </div>   
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum commodi ad, maiores accusantium repellat
+            quas accusamus eligendi, quasi magnam odit eius magni sit facere id. Ratione officia sapiente molestiae
+            accusamus!</p>
+    </div>
 </body>
+
 </html>
