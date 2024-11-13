@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+.borders{
+    padding: 60px;
+    width: 300px;
+   
+}
+.borders h1{
+    width: fit-content;
+    padding: 20px;
+}
+.borders .f1{
+    border: 5px solid darkgoldenrod;
+}
+.borders .f2{
+    border-width: 5px;
+    border-color: red green;
+    border-style: dotted;
+}
+.borders .f3{
+    border-width: 5px;
+    border-color: red green blue;
+    border-style: dashed;
+}
+.borders .f4{
+    border-width: 5px;
+    border-color: red green blue;
+    border-style: dashed;
+}
+.loading-example{
+    padding: 30px;
+}
+.loading{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 100px;
+    border-width: 8px;
+    border-color: blue transparent blue blue;
+    border-style: dotted;
+    animation: animate 0.9s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+
+
+.example3{
+   padding: 30px;
+}
+.e1{
+    width: 10px;
+    border-width: 30px;
+    border-color: transparent green transparent yellow;
+    border-style: solid;
+    border-radius: 100px;
+    animation: animate  0.9s linear infinite;
+}
+
+/*p3.html*/
+.margins{
+    padding: 30px;
+}
+.margins .f1{
+    margin: 30px;
+}
+.margins .f2{
+    margin: 25px 50px;
+}
+.margins .f3{
+    margin: 25px 50px 75px;
+}
+.margins .f4{
+    margin: 25px 50px 75px 100px; /*top right bottom left*/
+}
